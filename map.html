@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Map - WeatherNow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <h1>WeatherNow</h1>
+            </div>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="map.html" class="active"><i class="fas fa-map"></i> Map</a>
+                <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="map-container">
+        <div class="map-controls">
+            <div class="search-box">
+                <input type="text" id="location-input" placeholder="Search location...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="weather-overlay" id="weather-info">
+                <h3>Weather Information</h3>
+                <div class="weather-content">
+                    <p>Click on the map to see weather details</p>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-cloud-sun"></i>
+                <span>WeatherNow</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 WeatherNow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvYkH7DQ1tBAMLRHFm_4I47rqwbE2Zu5k&libraries=places"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

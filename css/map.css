@@ -1,0 +1,103 @@
+.map-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#map {
+    flex: 1;
+    height: calc(100vh - 180px);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-controls {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #e3e3e3;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    background: var(--dark-color);
+}
+
+.weather-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.weather-overlay h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.weather-content {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        flex-direction: column;
+    }
+
+    .map-controls {
+        width: 100%;
+    }
+
+    #map {
+        height: 400px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .search-box,
+    .weather-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        color: var(--light-color);
+    }
+
+    .search-box input {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: var(--light-color);
+    }
+
+    .search-box input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

@@ -55,8 +55,26 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvYkH7DQ1tBAMLRHFm_4I47rqwbE2Zu5k&libraries=places"></script>
+    <!-- Add loading state -->
+    <div id="loading-overlay">
+        <div class="loader">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading Maps...</p>
+        </div>
+    </div>
+    <!-- Update Google Maps loading -->
+    <script>
+        // Handle Google Maps loading error
+        function gm_authFailure() {
+            document.getElementById('map').innerHTML = `
+                <div class="map-error">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Error loading Google Maps. Please check your API key and try again.</p>
+                </div>
+            `;
+        }
+    </script>
     <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvYkH7DQ1tBAMLRHFm_4I47rqwbE2Zu5k&libraries=places&callback=initMap&v=weekly" async defer></script>
 </body>
 </html>

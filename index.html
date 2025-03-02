@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="bg-animations"></div>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <h1>WeatherNow</h1>
+            </div>
+            <nav>
+                <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="#"><i class="fas fa-map"></i> Map</a>
+                <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="weather-input">
+            <h3><i class="fas fa-search-location"></i> Enter a City Name</h3>
+            <input type="text" placeholder="E.g., New York, London, Tokyo">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="weather-header">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="location">Weather</span>
+                </div>
+                <div class="weather-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h2 class="temperature">25°C</h2>
+                <h4 class="description">Clear Sky</h4>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-droplet"></i>
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <div>
+                            <p class="wind-speed">12 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-cloud"></i>
+                        <div>
+                            <p class="clouds">20%</p>
+                            <p>Clouds</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-temperature-high"></i>
+                        <div>
+                            <p class="feels-like">27°C</p>
+                            <p>Feels Like</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <div>
+                            <p class="pressure">1015 hPa</p>
+                            <p>Pressure</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                            <p class="visibility">10 km</p>
+                            <p>Visibility</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-cloud-sun"></i>
+                <span>WeatherNow</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 WeatherNow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

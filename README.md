@@ -76,7 +76,8 @@ To set up the app locally:
 
 Here are some screenshots showcasing the app:
 
-![WeatherNow Screenshot](./screenshots/weather-app-screenshot.png)
+![image](https://github.com/user-attachments/assets/02fef285-6d66-4731-8596-8911ab69db3e)
+
 
 ---
 
@@ -101,9 +102,9 @@ This project is open source and licensed under the MIT License. See the [LICENSE
 
 ### 📬 Contact
 
-- 📧 **Email**: fahimmoon08@gmail.com
+- 📧 **Email**: moonhunzai83@gmail.com
 - 🔗 **LinkedIn**: [Fahim Ahmad](https://www.linkedin.com/in/fahim-ahmad-589a81246/)
-- 🌐 **Portfolio**: [fahimmoon.github.io](https://fahimmoon.github.io/)
+- 🌐 **Portfolio**: [fahimmoon.github.io][(https://fahimmoon.github.io/portfolio-website-main/)
 
 ---
 

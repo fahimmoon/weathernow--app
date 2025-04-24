@@ -70,8 +70,9 @@ The app will be available at `http://localhost:3000` in your browser.
 ---
 
 ### 📸 **Screenshots**:
-![WeatherNow Screenshot](./screenshots/weather-app-screenshot.png)  
-(Upload some screenshots here to showcase your app visually)
+![WeatherNow Screenshot![image](https://github.com/user-attachments/assets/8e645133-620c-49b2-98a7-1b463ed78019)
+
+
 
 ---
 
